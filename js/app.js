@@ -105,10 +105,10 @@ $(document).ready(function() {
   }
 
 //  Your Order Button Action
+  $("ul.tabs").tabs();
   $(".yourOrder").click(function() {
-    location.href = "#order";
-    console.log("I clicked you");
-  })
+    $("ul.tabs").tabs("select_tab", "order");
+  });
 
 //  Your Order Button Action
 // "href" attr of .submitOrder must specify the intended trigger modal ID
