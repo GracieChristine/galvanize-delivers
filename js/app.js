@@ -57,50 +57,50 @@ $(document).ready(function() {
     }
   })
 
-    //  Access Table Elements
-    function createTable(data) {
-      let table = $(".orderlist");
-      let tbody = $(".orderlist > tbody");
+  //  Access Table Elements
+  function createTable(data) {
+    let table = $(".orderlist");
+    let tbody = $(".orderlist > tbody");
 
-      tbody.html("");
+    tbody.html("");
 
-      // console.log("Table Status...", table.children());
+    // console.log("Table Status...", table.children());
 
-      //  Account for Zero Quantity
-      let subtotal = 0;
+    //  Account for Zero Quantity
+    let subtotal = 0;
 
-      for (let item in menuObject) {
-        if (menuObject[item].quantity !== 0) {
-          // console.log("Quantity...", menuObject[item].quantity);
-          // console.log("Price...", menuObject[item].price);
-          //  Create Necessary Variable
-          let itemName = menuObject[item].name;
-          let itemQuantity = menuObject[item].quantity;
-          let itemPrice = menuObject[item].price;
-          let itemTotal = itemQuantity * itemPrice;
+    for (let item in menuObject) {
+      if (menuObject[item].quantity !== 0) {
+        // console.log("Quantity...", menuObject[item].quantity);
+        // console.log("Price...", menuObject[item].price);
+        //  Create Necessary Variable
+        let itemName = menuObject[item].name;
+        let itemQuantity = menuObject[item].quantity;
+        let itemPrice = menuObject[item].price;
+        let itemTotal = itemQuantity * itemPrice;
 
-          //  Compiling Calculation
+        //  Compiling Calculation
 
-          subtotal += itemTotal;
-          let tax = (subtotal * 0.08).toFixed(2);
-          let total = parseInt(subtotal) + parseInt(tax);
+        subtotal += itemTotal;
+        let tax = (subtotal * 0.08).toFixed(2);
+        let total = parseInt(subtotal) + parseInt(tax);
 
-          $("#subtotal").text(`$${subtotal}`);
-          $("#tax").text(`$${tax}`);
-          $("#total").text(`$${total}`);
+        $("#subtotal").text(`$${subtotal}`);
+        $("#tax").text(`$${tax}`);
+        $("#total").text(`$${total}`);
 
-          // Building/Updating Table
+        // Building/Updating Table
 
-          let tableRow = $(`<tr></tr>`).appendTo(tbody);
+        let tableRow = $(`<tr></tr>`).appendTo(tbody);
 
-          // console.log("Table Row...", tableRow);
+        // console.log("Table Row...", tableRow);
 
-          $(`<td>${itemName}</td>`).appendTo(tableRow);
-          $(`<td>${itemQuantity}</td>`).appendTo(tableRow);
-          $(`<td>${itemTotal}</td>`).appendTo(tableRow);
-        }
+        $(`<td>${itemName}</td>`).appendTo(tableRow);
+        $(`<td>${itemQuantity}</td>`).appendTo(tableRow);
+        $(`<td>${itemTotal}</td>`).appendTo(tableRow);
       }
-
-      return table[0];
     }
+
+    return table[0];
+  }
 })
