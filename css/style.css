@@ -1,0 +1,70 @@
+/*General Styling*/
+
+li, li a {
+    color: purple;
+}
+
+h1, div.col.l6.s12, p.grey-text.text-lighten-4, .footer-copyright {
+    text-align: center;
+}
+
+div.col.s12 {
+    margin-top: 50px;
+}
+
+.footer-content {
+    margin-bottom: -40px;
+}
+
+
+/*Home Page Styling*/
+
+.parallax img {
+    display: inline;
+}
+
+.parallax-container {
+    height: 850px;
+}
+
+h1.header.center.white-text {
+    margin: 18.1rem 0 1.68rem 0;
+}
+
+p {
+    text-align: justify;
+    ;
+    text-justify: inter-word;
+}
+
+
+/*Manu Page Styling*/
+
+.btn-floating {
+    top: -20px;
+    left: 10px;
+}
+
+button.btn.waves-effect.waves-light.placeOrder {
+    /*margin: 0 41%;*/
+}
+
+
+/*Order Page Styling*/
+
+form {
+    height: 525px;
+}
+
+button.btn.waves-effect.waves-light.submitOrder {
+    margin: 0 42%;
+}
+
+table.striped.orderlist {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.orderlist th:nth-child(3n), .orderlist td:nth-child(3n), .pricetotal td {
+    text-align: right;
+}
