@@ -103,4 +103,14 @@ $(document).ready(function() {
 
     return table[0];
   }
+
+//  Your Order Button Action
+  $(".yourOrder").click(function() {
+    location.href = "#order";
+    console.log("I clicked you");
+  })
+
+//  Your Order Button Action
+// "href" attr of .submitOrder must specify the intended trigger modal ID
+  $('.submitOrder').leanModal();
 })

@@ -1,8 +1,12 @@
 /*General Styling*/
 
-li, li a {
-    color: purple;
+.tabs .tab a {
+  color: purple;
 }
+.tabs .tab a:hover {
+  color: #8765d0;
+}
+
 
 h1, div.col.l6.s12, p.grey-text.text-lighten-4, .footer-copyright {
     text-align: center;
@@ -12,12 +16,12 @@ div.col.s12 {
     margin-top: 50px;
 }
 
-.footer-content {
-    margin-bottom: -40px;
+.col.l6.s12.footer-content {
+  margin: 0 25%;
 }
 
 
-/*Home Page Styling*/
+/*Home Tab Styling*/
 
 .parallax img {
     display: inline;
@@ -38,27 +42,64 @@ p {
 }
 
 
-/*Manu Page Styling*/
+/*Manu Tab Styling*/
 
 .btn-floating {
     top: -20px;
     left: 10px;
 }
 
-button.btn.waves-effect.waves-light.placeOrder {
-    /*margin: 0 41%;*/
+.yourOrder,
+.yourOrder:hover,
+.yourOrder:active {
+    width: 39%;
+    margin: 0 31%;
+    background-color: purple
 }
 
 
-/*Order Page Styling*/
+/*Order Tab Styling*/
 
 form {
     height: 525px;
 }
 
-button.btn.waves-effect.waves-light.submitOrder {
-    margin: 0 42%;
-}
+/* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label,
+   .input-field input[type=datetime-local]:focus + label,
+   .input-field input[type=tel]:focus + label {
+     color: purple;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus,
+   .input-field input[type=datetime-local]:focus,
+   .input-field input[type=tel]:focus {
+     border-bottom: 1px solid purple;
+     box-shadow: 0 1px 0 0 purple;
+   }
+   /* valid color */
+   .input-field input[type=text].valid,
+   .input-field input[type=datetime-local].valid,
+   .input-field input[type=tel].valid {
+     border-bottom: 1px solid purple;
+     box-shadow: 0 1px 0 0 purple;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid,
+   .input-field input[type=datetime-local].invalid,
+   .input-field input[type=tel].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 red;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: purple;
+   }
+
 
 table.striped.orderlist {
     margin-top: 50px;
@@ -67,4 +108,17 @@ table.striped.orderlist {
 
 .orderlist th:nth-child(3n), .orderlist td:nth-child(3n), .pricetotal td {
     text-align: right;
+}
+
+.submitOrder,
+.submitOrder:hover,
+.submitOrder:active {
+    width: 39%;
+    margin: 0 31%;
+    background-color: purple
+}
+
+.modal-content h4,
+.modal-content p {
+  text-align: center;
 }
