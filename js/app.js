@@ -17,12 +17,12 @@ $(document).ready(function() {
       quantity: 0
     },
     shumai: {
-      name: "Shu Mai Dumplings",
+      name: "Shu Mai",
       price: 14.99,
       quantity: 0
     },
     chickenfeet: {
-      name: "Steamed Chicken Feet",
+      name: "Phoenix's Feet",
       price: 15.99,
       quantity: 0
     },
@@ -109,6 +109,9 @@ $(document).ready(function() {
   $(".yourOrder").click(function() {
     $("ul.tabs").tabs("select_tab", "order");
   });
+
+//  Your Info Validation
+
 
 //  Your Order Button Action
 // "href" attr of .submitOrder must specify the intended trigger modal ID
