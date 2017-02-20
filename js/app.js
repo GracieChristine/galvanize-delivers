@@ -111,6 +111,21 @@ $(document).ready(function() {
   });
 
 //  Your Info Validation
+  // $(".submitUserInfo").click(function() {
+  //   let name = $.trim($("#username").val()).length > 0;
+  //   let phone = $.trim($("#userphone").val()).length > 0;
+  //   let address = $.trim($("#useraddress").val()).length > 0;
+  //
+  //   if (!orderstatus) {
+  //     Materialize.toast('Please place an order.', 2000, 'purple center rounded')
+  //   }
+  //   else if(names && email && phone && address) {
+  //     Materialize.toast('Thank you for your order.!', 2000, 'purple center rounded')
+  //   }
+  //   else {
+  //     Materialize.toast('Please complete the form.', 2000, 'purple center rounded')
+  //   }
+  // })
 
 
 //  Your Order Button Action
