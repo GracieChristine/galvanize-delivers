@@ -83,11 +83,11 @@ $(document).ready(function() {
 
         subtotal += itemTotal;
         let tax = (subtotal * 0.08).toFixed(2);
-        let total = parseInt(subtotal) + parseInt(tax);
+        let total = (parseFloat(subtotal) + parseFloat(tax)).toFixed(2);
 
         $("#subtotal").text(`$${subtotal}`);
         $("#tax").text(`$${tax}`);
-        $("#total").text(`$${total}`);
+        $("#total").text(`$${total}`);gi
 
         // Building/Updating Table
 
