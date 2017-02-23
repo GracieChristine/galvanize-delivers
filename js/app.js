@@ -87,7 +87,7 @@ $(document).ready(function() {
 
         $("#subtotal").text(`$${subtotal}`);
         $("#tax").text(`$${tax}`);
-        $("#total").text(`$${total}`);gi
+        $("#total").text(`$${total}`);
 
         // Building/Updating Table
 
